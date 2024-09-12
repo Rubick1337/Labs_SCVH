@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Header from './header';  // Импортируем Header
+import Footer from './footer';
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
         <main>
           <p>Welcome to my website!</p>
         </main>
+        <Footer />
       </div>
     );
   }

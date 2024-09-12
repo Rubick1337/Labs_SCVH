@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Woodendot</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="Icon" href="images/free-icon-furniture-5540319.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+  </head>
+  <body>
+    <header>
+      <div class="header-site">
+        <div class="container-navigation">
+          <div class="navigation">
+            <nav>
+              <ul class="menu-navigation">
+                <li><a href="#Wooden-Furniture" data-i18n="menu-wooden-furniture">Wooden Furniture</a></li>
+                <li><a href="#About" data-i18n="menu-about">About</a></li>
+                <li><a href="#Stories" data-i18n="menu-stories">Stories</a></li>
+                <li><a href="admin-panel.html" data-i18n="Admin" id="admin">Admin</a></li>
+                <div class="buttons">
+                  <label class="switch">
+                    <input type="checkbox" class="switch-input" />
+                    <span class="switch-slider"></span>
+                  </label>
+                  <div class="moon"></div>
+                  <div class="dropdown">
+                    <button class="dropbtn" type="button">
+                      RU
+                    </button>
+                    <div class="dropdown-content">
+                      <button class="language-btn" type="button" id="button-ru">
+                        RU
+                      </button>
+                      <button class="language-btn" type="button" id="button-en">
+                        EN
+                      </button>
+                    </div>
+                  </div>
+              </div>
+              <div class="img-profile background-settings"></div>
+              <div id="dropdownMenu" class="dropdown-menu">
+                <div class="login-register-menu-header">
+                  <a href="../login.html" >Login</a>
+                  <a href="../registration.html">Register</a>
+              </div>
+              <div class="user-menu-header">
+                  <span>Welcome, <span class="username-display-header"></span>!</span> 
+                  <button id="logoutButton-header">Log out</button>
+              </div>
+            </div>
+              </ul>
+            </nav>
+          </div>
+          <div class="burger-menu">
+            <span class="line-burger"></span>
+            <span class="line-burger"></span>
+            <span class="line-burger"></span>
+          </div>
+            <img class="woodendot" alt="woodendot" src="images/IMAGE.png" id="woodendot" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="overlay"></div>
+      <section class="welcome background-size">
+        <div class="text-welcome">
+          <h2 data-i18n="welcome-text">
+            Furniture designed to live in harmony, creating distinctive and
+            <br />timeless spaces
+          </h2>
+          <button class="button-welcome" id="link-order" data-i18n="button-discover-now">Discover now</button>
+        </div>
+        <div id="role-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>You do not have the necessary permissions to access this page.</p>
+          </div>
+        </div>
+        <div class="welcome-board">
+          <h3 data-i18n="welcome-board-text">Do you know what is your decor style?</h3>
+        </div>
+      </section>
+      <section id="About" class="about">
+        <div class="information">
+          <div class="information-container">
+            <div class="shipping">
+              <img alt="auto" src="images/IMAGE3.png" width="60" height="30" />
+              <h3 data-i18n="shipping-text">Free Shipping</h3>
+            </div>
+            <div class="design">
+              <img alt="design" src="images/IMAGE4.png" width="50" height="49" />
+              <h3 data-i18n="design-text-design">Awarded Product Design</h3>
+            </div>
+            <div class="approach">
+              <img alt="approach" src="images/IMAGE5.png" width="34" height="42" />
+              <h3 data-i18n="approach-text-approach">Ecofriendly Approach</h3>
+            </div>
+            <div class="crafted">
+              <img alt="crafted" src="images/6IMAGE.png" width="47" height="47" />
+              <h3 data-i18n="crafted-text">Crafted in Spain</h3>
+            </div>
+            <div class="stars">
+              <img alt="starts" src="images/le-livret-daccueil-du-copropriйtaire-transformed1.png" width="47" height="47" />
+              <h3 data-i18n="stars-text">4.8 Star Reviews</h3>
+            </div>
+          </div>
+        </div>
+        <div class="photo-about">
+          <div class="Living-room background-size">
+            <h2 class="black-text" data-i18n="living-room-text">Living Room</h2>
+          </div>
+          <div class="Home-office background-size">
+            <h2 class="white-text" data-i18n="home-office-text">Home Office</h2>
+          </div>
+          <div class="Dining-room background-size">
+            <h2 class="black-text" data-i18n="dining-room-text">Dining Room</h2>
+          </div>
+          <div class="Bedroom background-size">
+            <h2 class="white-text" data-i18n="bedroom-text">Bedroom</h2>
+          </div>
+        </div>
+      </section>
+      <section id="Wooden-Furniture" class="Products">
+        <div class="Cloe">
+          <div class="Cloe-container">
+            <div class="text-cloe">
+              <div class="title-product title-cloe">
+                <h2 data-i18n="cloe-title">Cloe</h2>
+              </div>
+              <div class="description description-cloe">
+                <h3 data-i18n="cloe-description">Modular Storage System</h3>
+              </div>
+              <div class="price price-cloe">
+                <h3 data-i18n="cloe-price">From $ 1.176</h3>
+              </div>
+              <div class="text-product write-cloe">
+                <h3 class="left-text-product" data-i18n="cloe-text">
+                  An expansive way to furnish your space exactly <br />how you
+                  need it and like it. Transform it in exactly what you need
+                  like a bookshelf, tv stand or show <br />rack, you pick.
+                </h3>
+              </div>
+              <div class="shop-now cloe-shop">
+                <a href="" data-i18n="cloe-shop-now">Shop now</a>
+              </div>
+            </div>
+            <div class="img-cloe background-size"></div>
+          </div>
+        </div>
+        <div class="Pelican">
+          <div class="Pelican-container">
+            <div class="img-pelican background-size"></div>
+            <div class="text-pelican">
+              <div class="title-product pelican-title">
+                <h2 data-i18n="pelican-title">Pelican</h2>
+              </div>
+              <div class="description pelican-description">
+                <h3 data-i18n="pelican-description">Shelves with hidden hooks</h3>
+              </div>
+              <div class="price price-pelican">
+                <h3 data-i18n="pelican-price">From &nbsp; $89</h3>
+              </div>
+              <div class="text-product write-pelican">
+                <h3 data-i18n="pelican-text">
+                  Store or exhibit your favorite objects in the entrance hall,
+                  modern hallways, living rooms and bedrooms with a decorative
+                  and minimalist touch.
+                </h3>
+              </div>
+              <div class="config-store config-pelican">
+                <h3 data-i18n="pelican-config">+ 3 sizes, + 5 color finishes</h3>
+              </div>
+              <div class="shop-now shop-pelican">
+                <a href="" data-i18n="pelican-shop-now">Shop now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Alada">
+          <div class="Alada-container">
+            <div class="text-alada">
+              <div class="new-favorite">
+                <h3 data-i18n="alada-new-favorite">New Favorite!</h3>
+              </div>
+              <div class="title-product title-alada">
+                <h2 data-i18n="alada-title">Alada</h2>
+              </div>
+              <div class="description description-alada">
+                <h3 data-i18n="alada-description">Floating folding desk</h3>
+              </div>
+              <div class="price price-alada">
+                <h3 data-i18n="alada-price">From$534</h3>
+              </div>
+              <div class="text-product write-alada">
+                <h3 class="left-text-product" data-i18n="alada-text">
+                  A timeless and discreet folding desk that <br />seamlessly
+                  transforms into a decorative shelf in <br />
+                  seconds.
+                </h3>
+              </div>
+              <div class="config-store config-alada">
+                <h3 data-i18n="alada-config">+ 4 color finishes</h3>
+              </div>
+              <div class="shop-now shop-alada">
+                <a href="" data-i18n="alada-shop-now">Shop now</a>
+              </div>
+            </div>
+            <div class="alada-img background-size"></div>
+          </div>
+        </div>
+        <div class="Alba">
+          <div class="Alba-container">
+            <div class="alba-img background-size"></div>
+            <div class="text-alba">
+              <div class="title-product title-alba">
+                <h2 data-i18n="alba-title">Alba Collection</h2>
+              </div>
+              <div class="description description-alba">
+                <h3 data-i18n="alba-description">Modular bedside table & shelf</h3>
+              </div>
+              <div class="price price-alba">
+                <h3 data-i18n="alba-price">From &nbsp; $272</h3>
+              </div>
+              <div class="text-product write-alba">
+                <h3 data-i18n="alba-text">
+                  A versatile and modular piece with a sculptural <br />
+                  touch that can be used as a wall shelf or as a <br />
+                  bedside table with concealed storage.
+                </h3>
+              </div>
+              <div class="config-store config-alba">
+                <h3 data-i18n="alba-config">+ 6 color finishes, infinite combinations</h3>
+              </div>
+              <div class="shop-now shop-alba">
+                <a href="" data-i18n="alba-shop-now">Shop now</a>
+              </div>
+              <div class="img-company">
+                <img
+                  class="img-size-company"
+                  alt="img-company"
+                  src="images/company.png"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="Batea">
+          <div class="Batea-container">
+            <div class="text-batea">
+              <div class="title-product batea-title">
+                <h2 data-i18n="batea-title">Batea Collection</h2>
+              </div>
+              <div class="description description-batea">
+                <h3 data-i18n="batea-description">Tables with storage & tray tables</h3>
+              </div>
+              <div class="price price-batea">
+                <h3 data-i18n="batea-price">From$272</h3>
+              </div>
+              <div class="text-product write-batea">
+                <h3 data-i18n="batea-text">
+                  Composed of clean and rounded lines, the Batea
+                  <br />Collection includes unique tables with extra
+                  <br />functionality like a removable tray, and hidden storage.
+                </h3>
+              </div>
+              <div class="config-store config-batea">
+                <h3 data-i18n="batea-config">+ 3 sizes, + 6 color finishes</h3>
+              </div>
+              <div class="shop-now batea-shop">
+                <a href="" data-i18n="batea-shop-now">Shop now</a>
+              </div>
+            </div>
+            <div class="batea-img background-size"></div>
+          </div>
+        </div>
+        <div class="Product-carousel">
+          <div class="container-carousel-products">
+            <div class="Title-carousel">
+              <div class="title-text">
+                <h2 data-i18n="carousel-title">Our pieces inside your home</h2>
+              </div>
+              <div class="text-carousel">
+                <h3 data-i18n="carousel-text">
+                  Get inspired by our products in real-life. Tag us and be
+                  featured!
+                </h3>
+              </div>
+            </div>
+            <div class="carousel">
+              <div></div>
+              <div class="carousel-images">
+                <div class="carousel-controls">
+                  <img src="images/Carret_Left.svg" alt="carret-left" class="carousel-control" id="carret-left">
+                </div>
+                <div class="img-carousel-size url-carousel1 background-size images"></div>
+                <div class="img-carousel-size url-carousel2 background-size images"></div>
+                <div class="img-carousel-size url-carousel3 background-size images"></div>
+                <div class="carousel-controls">
+                  <img src="images/Carret_Right.svg" alt="carret-right" class="carousel-control" id="carret-right">
+                </div>
+              </div>
+              <div class="pagination">
+                <div class="atr2">
+                  <div class="button">
+                    <div class="inner2"></div>
+                  </div>
+                  <div class="button">
+                    <div class="inner2"></div>
+                  </div>
+                  <div class="button">
+                    <div class="inner2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>  
+      <section id="Stories" class="about-team">
+        <div class="text-team-carousel">
+          <div class="container-carousel-text-team">
+            <div class="container-text-team">
+              <div class="text-team">
+                <h3 id="testimonial-text" data-i18n="testimonial-text">
+                  "The team from Woodendot has displayed utmost professionalism from order to deliver and customer support. We placed an order to the UK and would definitely recommend friends to order from Woodendot!"
+                </h3>
+              </div>
+              <div class="author-text" id="testimonial-author" data-i18n="testimonial-author">R. Aoun, United Kingdom</div>
+            </div>
+          </div>
+          <div class="pagination pagination-team">
+            <div class="atr">
+              <div class="button-team" id="button-0"><div class="inner"></div></div>
+              <div class="button-team" id="button-1"><div class="inner"></div></div>
+              <div class="button-team" id="button-2"><div class="inner"></div></div>
+              <div class="button-team" id="button-3"><div class="inner"></div></div>
+              <div class="button-team" id="button-4"><div class="inner"></div></div>
+              <div class="button-team" id="button-5"><div class="inner"></div></div>
+              <div class="button-team" id="button-6"><div class="inner"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-team">
+          <div class="container-skills">
+            <div class="design-skiils">
+              <div class="container-design">
+                <img class="img-size-design" src="images/img-design.png" alt="design.png" />
+                <div class="text-design">
+                  <div class="Tittle-skills">
+                    <h2 data-i18n="design-title">DESIGN</h2>
+                  </div>
+                  <div class="text-skills">
+                    <h3 data-i18n="design-text">
+                      We create furniture pieces with personality,
+                      <br />designed to transform your space.
+                    </h3>
+                  </div>
+                </div>
+                <div class="learn-more">
+                  <a href="" data-i18n="learn-more-design">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="wood">
+              <div class="container-design">
+                <img class="img-size-footprint" src="images/img-footprint.png" alt="footprint.png" />
+                <div class="text-design text-position-footprint">
+                  <div class="Tittle-skills">
+                    <h2 data-i18n="footprint-title">FOOTPRINT</h2>
+                  </div>
+                  <div class="text-skills text-footprint">
+                    <h3 data-i18n="footprint-text">
+                      We are committed to look after what we love, <br />nature.
+                    </h3>
+                  </div>
+                </div>
+                <div class="learn-more">
+                  <a href="" data-i18n="learn-more-footprint">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="design-skiils">
+              <div class="container-design">
+                <img class="img-size-made" src="images/img-made.png" alt="made.png" />
+                <div class="text-design text-position-footprint">
+                  <div class="Tittle-skills">
+                    <h2 data-i18n="made-title">MADE</h2>
+                  </div>
+                  <div class="text-skills">
+                    <h3 data-i18n="made-text">
+                      Our local design, and production in the village of
+                      <br />Iscar, Spain.
+                    </h3>
+                  </div>
+                </div>
+                <div class="learn-more learn-made">
+                  <a href="" data-i18n="learn-more-made">Learn More</a>
+                </div>
+              </div>
+            </div>
+            <div class="wood">
+              <div class="container-design">
+                <img class="img-size-wood" src="images/img-wood.png" alt="wood.png" />
+                <div class="text-design text-position-footprint">
+                  <div class="Tittle-skills">
+                    <h2 data-i18n="wood-title">WOOD</h2>
+                  </div>
+                  <div class="text-skills text-wood">
+                    <h3 data-i18n="wood-text">
+                      Our characteristic and main material, and its <br />
+                      unique and timeless attributes.
+                    </h3>
+                  </div>
+                </div>
+                <div class="learn-more">
+                  <a href="" data-i18n="learn-more-wood">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="who-talking">
+          <div class="container-who-talking">
+            <div class="container-x2-who">
+              <div class="text-who-talking">
+                <h3 data-i18n="who-talking-title">Those who are talking about us...</h3>
+              </div>
+              <div class="img-who"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="navigation-contacts" class="contacts center flex-direction">
+        <div class="container-section-contacts">        
+          <div class="section">
+            <h2 data-i18n="contacts-title">КОНТАКТЫ</h2>
+            <div class="line-section"></div>
+          </div>
+          <div class="container-contacts-info">
+            <div class="contacts-info flex-direction">
+              <div class="text-contacts-2">
+                <h2 data-i18n="central-office">Центральный офис:<br>г. Москва, ул,Гоголя 13, 1й этаж</h2>
+              </div>
+              <div class="text-contacts-2">
+                <h2 data-i18n="kiev-office">Представительство в Киеве:<br>г. Киев, ул. Є. Коновальця, 103 оф. 410</h2>              
+              </div>
+              <div class="text-contacts-2">
+                <h2 data-i18n="regional-offices">Представительства в Харькове, Одессе, Ростове, Сочи, Белгороде</h2>
+              </div>
+              <div class="telephone">          
+                <h2 data-i18n="phone-title">Телефон:</h2>
+                <div class="text-contacts-2"><a href="tel:+7 987 654-54-56" data-i18n="phone-moscow">+7 987 654-54-56</a></div>
+                <div class="text-contacts-2"><a href="tel:+38 067 504-32-57" data-i18n="phone-kiev">+38 067 504-32-57</a></div>
+              </div>
+              <div class="text-contacts-2"><a href="mailto:AmandaHirst@gmail.com" data-i18n="email">Почта:&nbsp;poss1337@gmail.com</a></div>
+            </div>
+            <div class="map" id="map"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="block-audio">
+          <div class="cart-audio">
+            <audio class="music" src="music/Планы.mp3"></audio>
+            <img class="music-img" src="images/Планы.png" alt="" width="200" height="200">
+            <p class="audio-name" data-i18n="audio-name">Планы</p>
+            <div class="progress-bar">
+              <div class="progress"></div> <p class="time" data-i18n="audio-time">3:14</p>
+            </div>
+            <div class="audio-buttons">
+              <button type="submit" class="btn btn-prev"><img class="prev-img" src="images/prev.png" alt=""></button>
+              <button type="submit" class="btn btn-play"><img class="play-btn-img" src="images/play.png" alt=""></button>            
+              <button type="submit" class="btn btn-next"><img class="next-img" src="images/next.png" alt=""></button>
+            </div>
+            <div class="volume">          
+              <button class="volume"><i class="fa-solid fa-volume-high"></i></button>
+              <input type="range" min="0" max="1" step="any" class="volume-input" value="0.5">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container-footer">
+        <div class="contatcs">
+          <div class="about-skills About-size">
+            <div class="title-contacts">
+              <h2 data-i18n="footer-about-title">About</h2>
+            </div>
+            <div class="text-contacts">
+              <a href="" data-i18n="footer-about-us">About Us</a>
+              <a href="" data-i18n="footer-design">Design</a>
+              <a href="" data-i18n="footer-sustainability">Sustainability</a>
+              <a href="" data-i18n="footer-plant-trees">We plant trees</a>
+              <a href="" data-i18n="footer-our-story">Our Story</a>
+              <a href="" data-i18n="footer-awards">Awards</a>
+            </div>
+          </div>
+          <div class="about-skills contacts-size">
+            <div class="title-contacts">
+              <h2 data-i18n="footer-help-title">Help</h2>
+            </div>
+            <div class="text-contacts">
+              <a href="" data-i18n="footer-holiday-offers-faq">Holiday Offers FAQ</a>
+              <a href="" data-i18n="footer-faq">FAQ</a>
+              <a href="" data-i18n="footer-warranty">Warranty</a>
+              <a href="" data-i18n="footer-shipments">Shipments</a>
+              <a href="" data-i18n="footer-returns-claims">Returns & Claims</a>
+              <a href="" data-i18n="footer-contact-us">Contact us</a>
+            </div>
+          </div>
+          <div class="about-skills More-size">
+            <div class="title-contacts">
+              <h2 data-i18n="footer-more-title">More</h2>
+            </div>
+            <div class="text-contacts">
+              <a href="" data-i18n="footer-where-to-find-us">Where to find us</a>
+              <a href="" data-i18n="footer-family">Woodendot Family</a>
+              <a href="" data-i18n="footer-press">Press</a>
+              <a href="" data-i18n="footer-affiliates">Affiliates</a>
+              <a href="" data-i18n="footer-video-lifestyle">Video Lifestyle</a>
+            </div>
+          </div>
+          <div class="raiting-company">
+            <div class="text-raiting">
+              <h3 data-i18n="footer-news-title">Don’t miss any news and exclusive offers!</h3>
+            </div>
+            <button class="button-newsletter" data-i18n="footer-newsletter-button">Newsletter subscription</button>
+            <div class="Newsletter-img">
+              <img src="images/fsc.png" alt="fsc.png" width="66" height="66" />
+              <img src="images/one-tree.png" alt="one-tree.png" width="66" height="66" />
+            </div>
+            <div class="trustpilot-img">
+              <img src="images/trustpilot.png" alt="trustpilot.png" width="239" height="45" />
+            </div>
+          </div>
+        </div>
+        <div class="payment">
+          <div class="tm-company">
+            <h3 data-i18n="footer-copyright">© Copyright – WOODENDOT 2021</h3>
+          </div>
+          <div class="payment-img">
+            <img src="images/visa.png" alt="visa.png" width="66" height="28" />
+            <img src="images/paypal.png" alt="paypal.png" width="66" height="28" />
+            <img src="images/master.png" alt="master.png" width="66" height="28" />
+            <img src="images/american.png" alt="american.png" width="66" height="28" />
+            <img src="images/klama.png" alt="klama.png" width="66" height="28" />
+          </div>
+          <div class="text-payment">
+            <h3 data-i18n="footer-terms">Terms & Conditions | Privacy Policy & Cookies</h3>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=8c6155cc-1634-4b0f-921f-60fe51759d53&lang=ru_RU"></script>
+    <script src="map.js"></script>
+    <script src="burger.js"></script>
+    <script src="cookies.js"></script>
+    <script src="audio.js"></script>
+    <script src="pangination.js"></script>
+    <script src="js.js"></script>
+    <script src="translate.js"></script>
+    <script src="toogle-translate.js"></script>
+    <script src="dark-light-theme.js"></script>
+    <script src="dropmenuprofile.js"></script>
+    <script src="swapmenu.js"></script>
+    <script src="order-link.js"></script>
+    <script src="admin-section.js"></script>
+  </body>
+</html>

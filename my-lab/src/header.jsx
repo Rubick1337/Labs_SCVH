@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
-import image from './images/IMAGE.png';
+
 import Navigation from './navigation'
 class Header extends Component {
   render() {
+    const {logo} = this.props;
+
     return (
       <header>
         <div className="header-site">
@@ -15,7 +17,7 @@ class Header extends Component {
               <span className="line-burger"></span>
               <span className="line-burger"></span>
             </div>
-            <img className="woodendot" alt="woodendot" src={image} id="woodendot" />
+            <img className="woodendot" alt="woodendot" src={logo} id="woodendot" />
           </div>
         </div>
       </header>

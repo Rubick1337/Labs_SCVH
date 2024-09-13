@@ -18,9 +18,6 @@ class Navigation extends React.Component
               <li>
                 <a href="#Stories" data-i18n="menu-stories">Stories</a>
               </li>
-              <li>
-                <a href="admin-panel.html" data-i18n="Admin" id="admin">Admin</a>
-              </li>
               <div className="buttons">
                 <label className="switch">
                   <input type="checkbox" className="switch-input" />

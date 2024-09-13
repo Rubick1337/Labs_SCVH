@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Header from './header';  // Импортируем Header
-import Footer from './footer';
-import Welcome from './welcome'
-import Information from './informationus'
+import Header from './components/header';  // Импортируем Header
+import Footer from './components/footer';
+import Welcome from './components/welcome'
+import Information from './components/informationus'
 import image from './images/IMAGE.png';
 class App extends Component {
   render() {

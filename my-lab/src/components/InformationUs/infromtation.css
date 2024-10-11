@@ -1,0 +1,158 @@
+.information {
+    display: grid;
+    align-items: center;
+    height: 155px;
+  }
+  .information-container {
+    display: flex;
+    margin-left: 30px;
+  }
+  .information-container h3 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23.8px;
+    letter-spacing: 0.2px;
+  }
+  .shipping {
+    margin-left: 11.41px;
+    width: 16.88%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 21.82px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .design {
+    margin-left: 18.95px;
+    width: 19.8%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 9.26px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .approach {
+    margin-left: 10.95px;
+    width: 17.52%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 16.26px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .crafted {
+    width: 20.64%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 36.26px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .stars {
+    margin-left: 24px;
+    width: 20.57%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    gap: 36.26px;
+    animation: slideInLeft 1s ease-in-out;
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slidebottom {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .information-container {
+      flex-wrap: wrap;
+      margin-left: 0px;
+    }
+    .shipping {
+      margin-left: 0px;
+      min-width: 220px;
+      justify-content: center;
+      gap: 27.085px;
+       flex: 1 0 0; /*flex-grow flex-shrink: flex-basis: */
+    }
+    .design {
+      margin-left: 0px;
+      min-width: 220px;
+      gap: 33.559px;
+      flex: 1 0 0; /*flex-grow flex-shrink: flex-basis: */
+      justify-content: center;
+    }
+    .approach {
+      margin-right: 0px;
+      margin-left: 1px;
+      min-width: 220px;
+      justify-content: center;
+      flex: 1 0 0; /*flex-grow flex-shrink: flex-basis: */
+    }
+    .crafted {
+      min-width: 220px;
+      justify-content: center;
+      gap: 31.079px;
+      flex: 1 0 0; /*flex-grow flex-shrink: flex-basis: */
+    }
+    .stars {
+      margin-left: 0px;
+      min-width: 230px;
+      gap: 4px;
+      flex: 1 0 0;
+      justify-content: center;
+    }
+}
+@media screen and (max-width: 584px) {
+    .information {
+        height: 175px;
+      }
+      .shipping {
+        margin-right: 56px;
+      }
+      .approach {
+        margin-right: 17px;
+      }
+      .crafted {
+        margin-right: 29px;
+      }
+      .design {
+        gap: 9.559px;
+      }
+      .stars {
+        margin-right: 30px;
+        gap: 31px;
+      }
+}
+@media screen and (max-width: 457px) {
+    .information {
+      height: 260px;
+    }
+  }

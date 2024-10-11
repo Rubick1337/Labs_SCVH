@@ -1,0 +1,42 @@
+.section-furniture {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.content-furniture {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-furniture {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h2-text-size-big {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.button-explore-all {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.furniture-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.furniture-image {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "src": "/assets/IMAGE3.png",
+    "alt": "shipping",
+    "width": 60,
+    "height": 30,
+    "text": "Free Shipping",
+    "dataI18n": "shipping-text"
+  },
+  {
+    "src": "/assets/IMAGE4.png",
+    "alt": "design",
+    "width": 50,
+    "height": 49,
+    "text": "Awarded Product Design",
+    "dataI18n": "design-text-design"
+  },
+  {
+    "src": "/assets/IMAGE5.png",
+    "alt": "approach",
+    "width": 34,
+    "height": 42,
+    "text": "Ecofriendly Approach",
+    "dataI18n": "approach-text-approach"
+  },
+  {
+    "src": "/assets/6IMAGE.png",
+    "alt": "crafted",
+    "width": 47,
+    "height": 47,
+    "text": "Crafted in Spain",
+    "dataI18n": "crafted-text"
+  },
+  {
+    "src": "/assets/le-livret-daccueil-du-copropriйtaire-transformed1.png",
+    "alt": "stars",
+    "width": 47,
+    "height": 47,
+    "text": "4.8 Star Reviews",
+    "dataI18n": "stars-text"
+  }
+]

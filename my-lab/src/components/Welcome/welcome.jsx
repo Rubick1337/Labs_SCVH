@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './style.css'; // Подключение стилей, если есть
+import '../Welcome/welcome.css'; // Подключение стилей, если есть
 
 class WelcomeSection extends Component {
   render() {

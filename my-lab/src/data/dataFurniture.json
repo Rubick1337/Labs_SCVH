@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Sofa",
+    "description": "Comfortable three-seater sofa.",
+    "imageSrc": "/assets/Bedroom.png"
+  },
+  {
+    "name": "Dining Table",
+    "description": "Wooden dining table with six chairs.",
+    "imageSrc": "/assets/dining-room.png"
+  }
+]

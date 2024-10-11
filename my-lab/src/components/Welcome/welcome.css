@@ -1,0 +1,131 @@
+main {
+    background: #f7f7f7;
+  }
+  .welcome {
+    width: 100%;
+    height: 698px;
+    background-image: url("../../images/IMAGE2.png");
+    max-width: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .text-welcome {
+    margin-top: 78px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 46px;
+    animation: slidebottom 1s ease-in-out forwards;
+  }
+  .text-welcome h2 {
+    color: #fff;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+    letter-spacing: 0.2px;
+    margin-block-end: 0em;
+    margin-block-start: 0em;
+  }
+  .information-container h3 {
+    white-space: nowrap;
+  }
+  .button-welcome {
+    cursor: pointer;
+    border: 1px solid #fff;
+    background-color: transparent;
+    width: 26.89%;
+    height: 33px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    font-family: Cardo;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    animation: scaleAnimation 3s infinite;
+  }
+  @keyframes scaleAnimation {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  .button-welcome:hover {
+    border-radius: 2px;
+    border: 1px solid #bb945f;
+    background: #bb945f;
+    animation-play-state: paused;
+  }
+  .welcome-board {
+    position: absolute;
+    bottom: 4px;
+    left: 30px;
+    width: 309px;
+    height: 50px;
+    border-radius: 1px 1px 0px 0px;
+    background: linear-gradient(45deg, #d3d3d3, #000000);
+    background-size: 200% 200%; 
+    animation: gradientAnimation 5s linear infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .welcome-board h3 {
+    margin-top: 13px;
+    margin-right: 9px;
+    color: #fff;
+    text-align: center;
+    font-family: "Palatino Linotype";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  @media screen and (max-width: 768px) {
+  
+    .text-welcome h2 br {
+      display: none;
+    }
+    .text-welcome {
+      width: 98%;
+      margin-top: 50px;
+      gap: 76px;
+    }
+    .text-welcome h2 {
+      margin-left: 15px;
+    }}
+    @media screen and (max-width: 584px) {
+
+        .text-welcome {
+          margin-top: 12px;
+          gap: 50px;
+        }
+        .text-welcome h2 {
+          margin-left: 9px;
+          font-size: 20px;
+        }
+        .button-welcome {
+          width: 64.89%;
+        }
+        .welcome-board {
+          left: 17px;
+          width: 297px;
+        }}

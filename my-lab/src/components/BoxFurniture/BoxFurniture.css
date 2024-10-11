@@ -1,0 +1,37 @@
+.furniture-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.furniture-card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.furniture-card p {
+    margin: 0 0 15px;
+    font-size: 14px;
+}
+
+.furniture-card button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.furniture-card button:last-child {
+    background-color: #008CBA;
+}
+.furniture-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,328 @@
+.header-site {
+    display: flex;
+    height: 105px;
+  }
+  .navigation {
+    display: flex;
+    gap: 121px;
+    align-items: center;
+    height: 27px;
+    position: relative;
+  }
+  .navigation ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    list-style-type: none;
+    padding-inline-start: 27px;
+  }
+  .navigation a {
+    text-align: center;
+    font-family: Cardo;
+    font-size: 18.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+  .about
+  {
+    animation: slideInLeft 1s ease-in-out;
+  }
+  .Products.slideleft
+  {
+    animation: slideInRight 1.5s ease-in-out;
+  }
+  .navigation a:hover {
+    cursor: pointer;
+    color: #bb945f;
+  }
+  .woodendot
+  {
+    /* transition: transform 0.5s; */
+    animation: effectlogo 1.5s ease-in-out forwards;
+  }
+  /* .woodendot:hover {
+    transform: rotate(360deg);
+  } */
+  @keyframes effectlogo
+  {
+    0%
+    {
+      transform: skewY(-10deg);
+    }
+    50%
+    {
+      transform: translateX(-30%);
+    }
+    100%
+    {
+      transform:translate(0%)
+    }
+  }
+  .container-navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger-menu {
+    display: none;
+  }
+  #woodendot {
+    width: 190px;
+    height: 36px;
+  }
+  .dropdown-menu {
+    display: none;
+    z-index: 2;
+    position: absolute;
+    top: 54px;
+    right: 10px; 
+    width: 172px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .login-register-menu
+  {
+  display: block;
+  }
+  .user-menu
+  {
+  display: none;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  }
+  .user-menu-header
+  {
+  display: none;
+  gap: 5px;
+  flex-direction: column;
+  align-items: center;
+  }
+  .dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  .img-profile {
+    margin-right: 20px;
+    width: 48px;
+    height: 48px;
+    background-image: url(../../images/icon_profile_black.svg);
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    gap: 22px;
+  }
+  .buttons-burger
+  {
+    display: none;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 96px;
+    height: 36px;
+  }
+  .switch-input {
+    display: none;
+  }
+  .switch-slider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    background-color: #ebdfdf;
+    transition: 0.3s ease background-color;
+    border-radius: 56px;
+    transition: 0.4s ease-in-out;
+  }
+  .switch-slider::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 32px;
+    height: 32px;
+    background-color: #fafd0f;
+    border-radius: 50%;
+    animation: slide-up-sun 700ms ease-in-out forwards;
+  }
+  .switch-input:focus + .switch-slider {
+    box-shadow: 0 0 3px #000;
+  }
+  .switch-input:checked + .switch-slider {
+    background-color: #000;
+  }
+  .switch-input:checked + .switch-slider::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 52px;
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    box-shadow: 6px 2px 1px 5px white;
+    border-radius: 50%;
+    animation: slide-up-moon 700ms;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropbtn {
+    width: 73px;
+    height: 24px;
+    background-image: url(../..//images/Russia-Flag-icon.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background-position: left;
+  }
+  .dropbtn::after {
+    content: "";
+    background: rgba(0, 0, 0, 0) url(../..//images/745173.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    top: 5px;
+    right: -2px;
+    width: 16px;
+    height: 16px;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: #e8e6e6;
+    width: 73px;
+  }
+  .dropdown-content button {
+    color: black;
+    padding: 2px 0 2px 25px;
+    text-decoration: none;
+    transition: background-color 0.5s ease-in-out;
+    border: 0px;
+    cursor: pointer;
+  }
+  .dropdown-content button:first-child {
+    background: url(../../images/Russia-Flag-icon.png) no-repeat left center;
+  }
+  .dropdown-content button:last-child {
+    background: url(../../images/flag-usa-icon.png) no-repeat left center;
+  }
+  @media screen and (max-width: 768px) {
+  .navigation {
+    margin-left: 11px;
+  }
+  .navigation ul {
+    gap: 28px;
+  }
+}
+@media screen and (max-width:900px
+) {
+  .burger-menu {
+    display: block;
+    margin-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 2;
+    position: relative;
+  }
+  .navigation
+  {
+    width: 100%;
+  }
+.line-burger
+{
+  width: 45px;
+  height: 2px;
+  background:#000;
+}
+.burger-menu.active span:nth-child(2) {
+  transform: scale(0);
+  transition: transform 0.3s ease;
+}
+.burger-menu.active span:nth-child(1) {
+  transform:rotate(-45deg) translate(-38%,50%);
+  transition: transform 0.3s ease;
+}
+.burger-menu.active span:nth-child(3) {
+  transform:rotate(45deg) translate(-31%,50%);
+  transition: transform 0.3s ease;
+}
+.navigation.dark-theme
+{
+  background-color: #675e5e;
+}
+.open
+{
+  visibility: visible !important;
+  left: -11px !important;
+}
+.blur
+{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+  .navigation {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 517px;
+    background-color: #ecebeb;
+    z-index: 2;
+    animation:burgerAnimation 0.5s ease-in-out;
+    transition-duration: .25s;
+  }
+  .dropdown-menu
+  {
+    top: 345px;
+    left: 0;
+  }
+  .buttons
+  {
+    margin-left: 0px;
+  }
+  .open-overlay
+  {
+    visibility: visible !important;
+  }
+  .overlay
+  {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  @keyframes burgerAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  .navigation ul {
+    flex-direction: column;
+}}

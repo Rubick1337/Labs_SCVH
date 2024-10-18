@@ -8,5 +8,11 @@
     "name": "Dining Table",
     "description": "Wooden dining table with six chairs.",
     "imageSrc": "/assets/dining-room.png"
+  },
+  {
+    "name": "Bedroom",
+    "description": "Wooden dining table with six chairs.",
+    "imageSrc": "/assets/Living-room.png"
   }
 ]
+

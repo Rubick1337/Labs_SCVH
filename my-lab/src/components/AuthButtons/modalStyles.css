@@ -1,0 +1,65 @@
+
+.modal-content {
+  display: flex ;
+  flex-direction: row !important;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+.modal-dialog
+{
+  width: 100% !important;
+}
+.left-panel, .right-panel {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-panel {
+  background: white;
+  flex: 1;
+}
+
+.right-panel {
+  color: white;
+  background-image: url(../../images/Bedroom.png);
+  background-size:cover;
+  background-repeat:no-repeat;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-panel img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.left-panel h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.left-panel input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.left-panel button {
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}

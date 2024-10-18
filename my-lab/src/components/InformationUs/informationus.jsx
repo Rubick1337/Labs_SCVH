@@ -1,8 +1,13 @@
 import React from 'react';
 import informationItems from '../../data/infromationus.json';
 import "./infromtation.css"
+import Slider from "../Slider/Slider"
+import Card from "../Cards/Cards"
 export default function AboutSection() {
   return (
+    <>
+    <Slider/>
+
     <section id="About" className="about">
       <div className="information">
         <div className="information-container">
@@ -14,6 +19,9 @@ export default function AboutSection() {
           ))}
         </div>
       </div>
+
+      <Card/>
     </section>
+    </>
   );
 }

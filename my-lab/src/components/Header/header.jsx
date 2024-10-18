@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Header/header.css';
+import AuthButtons from '../AuthButtons/AuthButtons';
 import Navigation from '../Header/navigation';
 
 export default function Header({ logo }) {
@@ -9,11 +10,7 @@ export default function Header({ logo }) {
         <div className="container-navigation">
           <div className="navigation">
             <Navigation />
-          </div>
-          <div className="burger-menu">
-            <span className="line-burger"></span>
-            <span className="line-burger"></span>
-            <span className="line-burger"></span>
+            <AuthButtons />
           </div>
           <img className="woodendot" alt="woodendot" src={logo} id="woodendot" />
         </div>

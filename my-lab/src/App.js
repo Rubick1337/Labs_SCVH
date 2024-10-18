@@ -6,10 +6,10 @@ import SectionFurniture from '../src/components/SectionFurniture/SectionFurnitur
 import NotFound from './components/NotFound/Notfound';
 import image from '../src/images/IMAGE.png';
 import { Route, Routes, useLocation } from "react-router-dom"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
 export default function App() {
     const location = useLocation(); // Получаем текущий маршрут
-
-    const isHomePage = location.pathname === "/"; // Проверяем, на главной ли мы странице
 
     return (
       <>

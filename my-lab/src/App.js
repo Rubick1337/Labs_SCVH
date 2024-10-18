@@ -15,14 +15,14 @@ export default function App() {
       <>
         <Header logo={image} />
         <main>
-          {isHomePage && (
-            <>
-              <Welcome />
-              <Information />
-            </>
-          )}
+
           {/* Маршруты */}
           <Routes>
+          <Route path="/" element={            <>
+              <Welcome />
+              <Information />
+            </>} />
+
             <Route path="/welcome" element={<Welcome />} />
             <Route path="/informationus" element={<Information />} />
             <Route path="/cards" element={<SectionFurniture/>} />

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import BoxFurniture from "../BoxFurniture/BoxFurniture";
 import ButtonBlackStyle from "../ButtonBlackStyle/ButtonBlackStyle";
 import DataFurniture from '../../data/dataFurniture.json';
@@ -10,12 +10,13 @@ function SectionFurniture() {
     const [openModalChange, setOpenModalChange] = useState(false);
     const [indexChangeElement, setIndexChangeElement] = useState(null);
 
+
     function deleteObjectFromArr(index) {
         setDataFurniture([...dataFurniture.slice(0, index), ...dataFurniture.slice(index + 1)]);
     }
 
     function addNewObject(name, description) {
-        const newObject = { name, description, imageSrc: "assets/free-icon-furniture-5540319.png" }; // Добавляем изображение по умолчанию
+        const newObject = { name, description, imageSrc: "assets/free-icon-furniture-5540319.png" }; 
         setDataFurniture([...dataFurniture, newObject]);
     }
 

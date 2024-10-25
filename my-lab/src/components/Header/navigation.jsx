@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Navbar, Nav, Button, Offcanvas } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import './header.css';  
-
+import  Dropdown  from '../Dropdown/Dropdown';
 export default function Navigation() {
   const [show, setShow] = useState(false); 
 
@@ -48,6 +48,7 @@ export default function Navigation() {
               Stories
             </Nav.Link>
           </Nav>
+          <Dropdown/>
         </Offcanvas.Body>
       </Offcanvas>
     </>

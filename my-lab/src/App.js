@@ -1,33 +1,50 @@
+import React, { useState, useEffect } from 'react';
 import Header from '../src/components/Header/header'; 
 import Footer from '../src/components/Footer/footer';
 import Welcome from '../src/components/Welcome/welcome';
 import Information from '../src/components/InformationUs/informationus';
-import SectionFurniture from '../src/components/SectionFurniture/SectionFurniture.jsx'
+import SectionFurniture from '../src/components/SectionFurniture/SectionFurniture.jsx';
 import NotFound from './components/NotFound/Notfound';
 import image from '../src/images/IMAGE.png';
-import { Route, Routes, useLocation } from "react-router-dom"
+import { Route, Routes, useLocation } from "react-router-dom";
+import { Spinner, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js'; 
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 export default function App() {
-    const location = useLocation(); // Получаем текущий маршрут
+    const location = useLocation();
+    const [loading, setLoading] = useState(false); 
+
+    useEffect(() => {
+        setLoading(true); 
+        const timer = setTimeout(() => {
+            setLoading(false); 
+        }, 1000); 
+
+        return () => clearTimeout(timer); 
+    }, [location]);
 
     return (
       <>
         <Header logo={image} />
         <main>
-
-          {/* Маршруты */}
-          <Routes>
-          <Route path="/" element={            <>
-              <Welcome />
-              <Information />
-            </>} />
-
-            <Route path="/welcome" element={<Welcome />} />
-            <Route path="/informationus" element={<Information />} />
-            <Route path="/cards" element={<SectionFurniture/>} />
-            <Route path="*" element={<NotFound />} /> {/* Обработка ошибочного маршрута */}
-          </Routes>
+          {/* Показываем спиннер при загрузке */}
+          {loading ? (
+            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
+              <Spinner animation="border" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </Spinner>
+            </Container>
+          ) : (
+            // Основной контент
+            <Routes>
+              <Route path="/" element={<Welcome />} />
+              <Route path="/welcome" element={<Welcome />} />
+              <Route path="/informationus" element={<Information />} />
+              <Route path="/cards" element={<SectionFurniture />} />
+              <Route path="*" element={<NotFound />} /> {/* Обработка ошибочного маршрута */}
+            </Routes>
+          )}
         </main>
         <Footer />
       </>

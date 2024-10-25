@@ -19,10 +19,9 @@ const AuthButtons = () => {
         Register
       </Button>
 
-      {/* Модальное окно для входа */}
+
       <LoginModal show={showLogin} onHide={handleLoginClose} />
 
-      {/* Модальное окно для регистрации */}
       <RegisterModal show={showRegister} onHide={handleRegisterClose} />
     </>
   );

@@ -239,6 +239,10 @@
   .navigation {
     margin-left: 11px;
   }
+  .dropdown
+  {
+    display: none;
+  }
   .navigation ul {
     gap: 28px;
   }
@@ -264,7 +268,10 @@
   .navbar-nav {
     display: flex; /* Показываем навигацию */
   }
-
+  .dropdown
+  {
+    display: block;
+  }
   #offcanvas-menu {
     display: none; /* Скрываем Offcanvas на больших экранах */
   }

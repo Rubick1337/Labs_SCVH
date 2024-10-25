@@ -7,7 +7,6 @@ function LanguageSwitcher() {
 
   const handleSelect = (lang) => {
     i18n.changeLanguage(lang); 
-    console.log(`Language changed to: ${lang}`);
   };
 
   return (

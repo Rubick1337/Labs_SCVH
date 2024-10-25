@@ -8,7 +8,7 @@ import NotFound from './components/NotFound/Notfound';
 import image from '../src/images/IMAGE.png';
 
 import { Route, Routes, useLocation } from "react-router-dom";
-import { Spinner, Container } from 'react-bootstrap';
+import Loading from '../src/components/Spin/Spin.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
@@ -30,10 +30,7 @@ export default function App() {
         <Header logo={image} />
         <main>
           {loading ? (
-            <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
-              <Spinner animation="border" role="status">
-              </Spinner>
-            </Container>
+            <Loading /> 
           ) : (
             <Routes>
               <Route path="/" element={<Welcome />} />

@@ -3,6 +3,7 @@ import { Card, Button, Container, Alert, OverlayTrigger, Tooltip } from 'react-b
 import dataFurniture from '../../data/dataFurniture.json';
 import './furnitureStyles.css';
 import Table from '../Table/Table'
+
 function FurnitureCards() {
   const [showAlert, setShowAlert] = useState(false);
 
@@ -39,6 +40,7 @@ function FurnitureCards() {
       </div>
     </Container>
     <Table/>
+
 </>
   );
 }

@@ -6,6 +6,7 @@ import Information from '../src/components/InformationUs/informationus';
 import SectionFurniture from '../src/components/SectionFurniture/SectionFurniture.jsx';
 import NotFound from './components/NotFound/Notfound';
 import image from '../src/images/IMAGE.png';
+
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Spinner, Container } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -28,15 +29,12 @@ export default function App() {
       <>
         <Header logo={image} />
         <main>
-          {/* Показываем спиннер при загрузке */}
           {loading ? (
             <Container className="d-flex justify-content-center align-items-center" style={{ height: '100vh' }}>
               <Spinner animation="border" role="status">
-                <span className="visually-hidden">Loading...</span>
               </Spinner>
             </Container>
           ) : (
-            // Основной контент
             <Routes>
               <Route path="/" element={<Welcome />} />
               <Route path="/welcome" element={<Welcome />} />

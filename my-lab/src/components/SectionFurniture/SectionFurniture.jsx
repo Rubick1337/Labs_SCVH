@@ -4,7 +4,8 @@ import ButtonBlackStyle from "../ButtonBlackStyle/ButtonBlackStyle";
 import DataFurniture from '../../data/dataFurniture.json';
 import PopupModalChange from "../PopupModalChange/PopupModalChange";
 import './SectionFurniture.css';
-
+import User from '../User/User.jsx'
+import Furniture from '../Furniture/Furniture.jsx'
 function SectionFurniture() {
     const [dataFurniture, setDataFurniture] = useState(DataFurniture);
     const [openModalChange, setOpenModalChange] = useState(false);
@@ -45,6 +46,7 @@ function SectionFurniture() {
     ));
 
     return (
+        <>
         <section className="section-furniture">
             <div className="content-furniture">
                 <div className="title-furniture">
@@ -65,6 +67,9 @@ function SectionFurniture() {
                 changeFunction={changeObject}
             />
         </section>
+            <Furniture/>
+            <User/>
+            </>
     );
 }
 

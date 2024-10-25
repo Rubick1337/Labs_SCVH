@@ -1,27 +1,35 @@
 import React from 'react';
-import { Toast} from 'react-bootstrap';
-import "../Remark/remark.css"
+import { Toast } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import './remark.css';
+
 function ReviewsSection() {
+  const { t } = useTranslation();
+  
+  // Обновляем массив отзывов, чтобы использовать ключи для перевода
   const reviews = [
-    { id: 1, name: "Алексей", review: "Отличная мебель! Качество на высшем уровне, буду рекомендовать друзьям!" },
-    { id: 2, name: "Марина", review: "Быстрая доставка и отличный сервис! Спасибо за отличную работу!" },
-    { id: 3, name: "Иван", review: "Хорошие цены и большой выбор. Очень доволен покупкой." },
+    { id: 1, nameKey: 'reviews.review1.name', textKey: 'reviews.review1.text' },
+    { id: 2, nameKey: 'reviews.review2.name', textKey: 'reviews.review2.text' },
+    { id: 3, nameKey: 'reviews.review3.name', textKey: 'reviews.review3.text' },
   ];
 
   return (
     <section style={{ padding: '20px' }}>
-      <h2 style={{ textAlign: 'center' }}>Отзывы наших клиентов</h2>
-      <div className="postion">
+      <h2 style={{ textAlign: 'center' }}>{t('reviews.title')}</h2>
+      <div className="position">
         {reviews.map((item) => (
           <Toast key={item.id} className="mb-3">
             <Toast.Header closeButton={false}>
-              <strong className="me-auto">{item.name}</strong>
+              {/* Используем функцию t для получения имени отзыва */}
+              <strong className="me-auto">{t(item.nameKey)}</strong>
             </Toast.Header>
-            <Toast.Body>{item.review}</Toast.Body>
+            <Toast.Body>
+              {/* Используем функцию t для получения текста отзыва */}
+              {t(item.textKey)}
+            </Toast.Body>
           </Toast>
-          
         ))}
-        </div>
+      </div>
     </section>
   );
 }

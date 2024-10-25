@@ -1,17 +1,18 @@
 import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 function CompanyGoal() {
+  const { t } = useTranslation();
   const goalCompletion = 75; 
 
   return (
-    <section style={{ padding: '20px', textAlign: 'center',}}>
-      <h2>Наша цель</h2>
+    <section style={{ padding: '20px', textAlign: 'center' }}>
+      <h2>{t('welcome.ourGoal')}</h2>
       <p>
-        Мы стремимся к тому, чтобы наши клиенты были полностью удовлетворены качеством нашей мебели и услуг.
-        Наша цель — достичь 100% удовлетворенности клиентов, предлагая лучшие решения для современного интерьера.
+        {t('welcome.goalDescription')}
       </p>
-      <h4>Прогресс выполнения цели: {goalCompletion}%</h4>
+      <h4>{t('welcome.goalProgress', { percentage: goalCompletion })}</h4>
       <ProgressBar now={goalCompletion} label={`${goalCompletion}%`} style={{ height: '25px', width: '70%', margin: '0 auto' }} />
     </section>
   );

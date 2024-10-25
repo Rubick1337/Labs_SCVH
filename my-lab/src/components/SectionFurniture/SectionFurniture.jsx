@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import BoxFurniture from "../BoxFurniture/BoxFurniture";
 import ButtonBlackStyle from "../ButtonBlackStyle/ButtonBlackStyle";
 import DataFurniture from '../../data/dataFurniture.json';
 import PopupModalChange from "../PopupModalChange/PopupModalChange";
 import './SectionFurniture.css';
+import { useTranslation } from 'react-i18next';
 import User from '../User/User.jsx'
 import Furniture from '../Furniture/Furniture.jsx'
 function SectionFurniture() {
+        const { t } = useTranslation(); // Импортируйте функцию t для перевода
     const [dataFurniture, setDataFurniture] = useState(DataFurniture);
     const [openModalChange, setOpenModalChange] = useState(false);
     const [indexChangeElement, setIndexChangeElement] = useState(null);
@@ -47,30 +49,30 @@ function SectionFurniture() {
 
     return (
         <>
-        <section className="section-furniture">
+          <section className="section-furniture">
             <div className="content-furniture">
-                <div className="title-furniture">
-                    <h2 className="h2-text-size-big">Furniture Collection</h2>
-                    <button className="button-explore-all">Explore all furniture</button>
-                </div>
-                <ButtonBlackStyle title="Добавить" onClickEvent={() => addNewObject(`New Furniture ${dataFurniture.length + 1}`, 'New Description')} />
-                <div className="furniture-cards">
-                    {furnitureCards}
-                </div>
+              <div className="title-furniture">
+                <h2 className="h2-text-size-big">{t('sectionFurniture.title')}</h2>
+                <button className="button-explore-all">{t('sectionFurniture.exploreAll')}</button>
+              </div>
+              <ButtonBlackStyle title={t('sectionFurniture.add')} onClickEvent={() => addNewObject(`New Furniture ${dataFurniture.length + 1}`, 'New Description')} />
+              <div className="furniture-cards">
+                {furnitureCards}
+              </div>
             </div>
             <PopupModalChange
-                openModalChange={openModalChange}
-                toggleOpenModalChange={toggleOpenModalChange}
-                indexChangeElement={indexChangeElement}
-                name={indexChangeElement !== null ? dataFurniture[indexChangeElement].name : ''}
-                description={indexChangeElement !== null ? dataFurniture[indexChangeElement].description : ''}
-                changeFunction={changeObject}
+              openModalChange={openModalChange}
+              toggleOpenModalChange={toggleOpenModalChange}
+              indexChangeElement={indexChangeElement}
+              name={indexChangeElement !== null ? dataFurniture[indexChangeElement].name : ''}
+              description={indexChangeElement !== null ? dataFurniture[indexChangeElement].description : ''}
+              changeFunction={changeObject}
             />
-        </section>
-            <Furniture/>
-            <User/>
-            </>
-    );
+          </section>
+          <Furniture />
+          <User />
+        </>
+      );
 }
 
 export default SectionFurniture;

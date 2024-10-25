@@ -1,23 +1,24 @@
-import React, { useState } from 'react';
+
 import Dropdown from 'react-bootstrap/Dropdown';
+import { useTranslation } from 'react-i18next';
 
 function LanguageSwitcher() {
-  const [language, setLanguage] = useState('English');
+  const { i18n } = useTranslation();
 
   const handleSelect = (lang) => {
-    setLanguage(lang); 
+    i18n.changeLanguage(lang); 
     console.log(`Language changed to: ${lang}`);
   };
 
   return (
     <Dropdown>
       <Dropdown.Toggle variant="black" id="dropdown-basic">
-        {language}
+        {i18n.language === 'en' ? 'English' : 'Русский'}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item onClick={() => handleSelect('English')}>English</Dropdown.Item>
-        <Dropdown.Item onClick={() => handleSelect('Русский')}>Русский</Dropdown.Item>
+        <Dropdown.Item onClick={() => handleSelect('en')}>English</Dropdown.Item>
+        <Dropdown.Item onClick={() => handleSelect('ru')}>Русский</Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
   );
